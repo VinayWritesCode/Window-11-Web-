@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body {
+    background-image: url(./resources/images/bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.taskbar {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.815);
+    box-shadow: inset 550px 0 0 5550px rgba(255,255,255,0.3);
+      backdrop-filter: blur(15px);
+    overflow: hidden;
+     z-index: 110;
+}
+
+
+
+
+.pinned-AllApps {
+    position: relative;
+    width: 100%-20px;
+   padding: 25px 0px 0px 60px;
+   z-index: 200;
+}
+
+.pinned {
+     font-size: 15px;
+}
+
+.AllApps{
+   position: absolute;
+   top: 25px;
+   right: 35px;
+   font-size: 16px;
+   width: 64px;
+   height: 20px;
+   background-color: #fff;
+   border-radius: 4px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.AllApps h6 {
+    text-align: center;
+    font-weight: 200px;
+}
+
+.AllApps h6 span {
+    margin-left: 9px;
+}
+
+.icons-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.window-content {
+     position: absolute;
+     width: 100%;
+     z-index: 100;
+     display: flex;
+     justify-content: center;
+     bottom: 0vh;
+     transition: ease-in .4s;
+      z-index: -1;
+}
+
+.start-bar {
+      background: transparent;
+      width: 450px;
+      height: 500px;
+      position: absolute;
+      box-shadow: inset 550px 0 0 5550px rgba(255,255,255,0.3);
+      backdrop-filter: blur(15px);
+      border-radius: 15px;
+}
+
+
+.Apps-pinned {
+    position: relative;
+    width: 98%;
+    position: relative;
+    margin-top: 8px;
+    padding: 5px;
+    float: left;
+    font-size: small;
+    display: flex;
+    align-items: start;
+    height: 30vh;
+    flex-wrap: wrap;
+    box-shadow: inset 0 0 0 5550px rgba(255,255,255,0.3);
+}
+
+.Apps-pinned div {
+    position: relative;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Apps-pinned img {
+    width: 25px;
+    height: 25px;
+    padding-bottom: 5px;
+}
+
+.icons-center img{
+    width: 25px;
+    height: 25px;
+    margin: 4px 15px 4px 15px;
+    cursor: pointer;
+     box-shadow: 0px 5px 5px 0px rgba(233, 225, 225, 0.5);
+}
+
+.icons-center #Start-menu {
+    width: 33px;
+    height: 33px;
+    margin: 0px 10px 0px 0px;
+}
+
+.More {
+     position: absolute;
+   top: 42vh;
+   right: 35px;
+   font-size: 16px;
+   width: 64px;
+   height: 20px;
+   background-color: #fff;
+   border-radius: 4px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#Recommended {
+    position: absolute;
+    top: 266px;
+    left: 50px;
+}
+
