@@ -1,18 +1,53 @@
+
+var WindowContent = document.querySelector(".window-content");
+var SearchBar = document.querySelector(".searchBar");
+
 // open start menu code
 
 var StartIcon = document.getElementById("Start-menu");
 var browser = document.querySelector(".browser");
 
+
 StartIcon.addEventListener("click", function () {
-    let WindowContent = document.querySelector(".window-content");
-    if (WindowContent.style.bottom === "0vh") {
+    
+    if (WindowContent.style.bottom === "0vh" ) {
         WindowContent.style.bottom = "93vh";
+        if (SearchBar.style.bottom === "10vh") {
+            SearchBar.style.bottom = "-180vh";
+        }
     }
     else {
         WindowContent.style.bottom = "0vh";
     }
 });
 
+// Open Search Menu
+
+var SearchIcon = document.getElementById("Search-menu");
+
+SearchIcon.addEventListener("click", function () {
+    
+    if (SearchBar.style.bottom === "-180vh" &&  WindowContent.style.bottom === "0vh") {
+        
+        SearchBar.style.bottom = "10vh";
+    }
+    
+    else if (WindowContent.style.bottom === "0vh" && SearchBar.style.bottom === "10vh") {
+        SearchBar.style.bottom = "-180vh";
+    }
+    
+    else if (WindowContent.style.bottom === "93vh") {
+            WindowContent.style.bottom = "0vh";
+            SearchBar.style.bottom = "10vh";
+    }  
+    else if (SearchBar.style.bottom === "10vh"){
+        SearchBar.style.bottom = "-180vh"
+    }
+    else {
+        SearchBar.style.bottom ="10vh";
+    }
+    
+});
 
 // Date And Time 
 
