@@ -56,6 +56,13 @@ body {
    cursor: pointer;
 }
 
+.Datetime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #time, #day, #date {
     font-size: 11px;
     margin-left: 18px;
@@ -226,12 +233,47 @@ body {
 
 .searchByType img {
     position: absolute;
-    width: 22px;
-    height: 22px;
-    margin-left: 10px;
-    padding: 5px;
+    width: 18px;
+    height: 18px;
+    padding: 6px;
+    margin-left: 5px;
     font-weight: 600;
     text-align-last: center;
+}
+
+.Nav-Search {
+    position: relative;
+    width: 95.5%;
+    margin-top: 40px;
+    padding: 15px;
+    float: left;
+    font-size: 18px;
+    height: 30vh;
+    box-shadow: inset 0 0 0 5550px rgba(255,255,255,0.3);
+}
+
+.Nav-Search-Start {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.Nav-Search-Start h5 , .Nav-Search-Start h6{
+    font-weight: 100;
+    margin-left: 18px;
+    color: #52575d;
+}
+
+.Nav-Search-Start h5:hover , .Nav-Search-Start h6:hover ,.Nav-Search-Start h5.active{
+    border-bottom: 4px solid #0273d3;
+    margin-bottom: -4px;
+    color: #404548;
+}
+
+.Search-More img{
+    margin-left: 5px;
 }
 
 input {
